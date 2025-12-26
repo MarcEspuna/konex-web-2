@@ -71,7 +71,7 @@ export default async function ProductsPage({
                 <li key={spec}>{spec}</li>
               ))}
             </ul>
-            <div style={{ marginTop: 20, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+            <div className="button-row" style={{ marginTop: 20 }}>
               <Link
                 href={`/${locale}/products/konex-h743`}
                 className="button button-ghost"

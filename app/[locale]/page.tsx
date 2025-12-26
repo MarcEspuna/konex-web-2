@@ -49,7 +49,7 @@ export default async function HomePage({
             <div className="pill">{home.hero.kicker}</div>
             <h1 className="hero-title">{home.hero.title}</h1>
             <p className="hero-lede">{home.hero.lede}</p>
-            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 24 }}>
+            <div className="button-row" style={{ marginTop: 24 }}>
               {home.hero.ctas.map((cta) => (
                 <Link
                   key={cta.label}

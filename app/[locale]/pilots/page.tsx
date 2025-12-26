@@ -70,7 +70,7 @@ export default async function PilotsPage({
             <h3>{locale === 'es' ? 'Comunidad' : 'Community'}</h3>
             <p>{pilotsCopy.communityNote}</p>
             {communityLinks.length > 0 ? (
-              <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+              <div className="button-row">
                 {communityLinks.map((link) => (
                   <a key={link.href} href={link.href} className="button button-ghost">
                     {link.label}
