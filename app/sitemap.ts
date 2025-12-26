@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     staticPaths.forEach((path) => {
       entries.push({
         url: `${baseUrl}/${locale}${path}`,
-        changefreq: 'monthly',
+        changeFrequency: 'monthly',
         priority: path === '' ? 1 : 0.7
       });
     });
@@ -33,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     getEvents(locale).forEach((event) => {
       entries.push({
         url: `${baseUrl}/${locale}/events/${event.slug}`,
-        changefreq: 'monthly',
+        changeFrequency: 'monthly',
         priority: 0.6
       });
     });
